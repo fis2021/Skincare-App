@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="PageUser"
-            prefHeight="400.0" prefWidth="600.0">
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.StartUserController">
+    <children>
+        <BorderPane prefHeight="250.0" prefWidth="600.0">
+         <bottom>
+                <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleMakeOrderButtonAction" prefWidth="150.0" text="Comanda" BorderPane.alignment="CENTER">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+         </bottom>
+        </BorderPane>
+        <HBox alignment="CENTER" prefHeight="150.0" prefWidth="600.0" style="-fx-spacing: 150;">
+         <children>
+                <Button fx:id="logOutButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleLodOutButtonAction" prefWidth="150.0" text="Log out">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+         </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="150.0" prefWidth="600.0" style="-fx-spacing: 150;">
+         <children>
+                <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleViewOrdersButtonAction" prefWidth="150.0" text="Lista comenzi">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleViewProductsButtonAction" prefWidth="150.0" text="Lista produse">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+         </children></HBox>
 
-</AnchorPane>
+    </children>
+</VBox>
