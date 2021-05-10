@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.CustomerController">
+    <children>
+        <BorderPane prefHeight="250.0" prefWidth="600.0">
+         <left>
+            <Button mnemonicParsing="false" prefHeight="62.0" prefWidth="136.0" text="Ask for help" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+         </left>
+         <right>
+            <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="150.0" text="Search..." BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+         </right></BorderPane>
+        <HBox alignment="CENTER" prefHeight="150.0" prefWidth="600.0" style="-fx-spacing: 150;" />
+        <HBox alignment="CENTER" prefHeight="150.0" prefWidth="600.0" style="-fx-spacing: 150;">
+         <children>
+                <Button fx:id="logOutButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleLodOutButtonAction" prefWidth="150.0" text="Log out">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+         </children></HBox>
+
+    </children>
+</VBox>

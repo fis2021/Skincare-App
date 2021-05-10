@@ -9,14 +9,14 @@
     <padding>
         <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
     </padding>
-    <Text id="title-text" text="Skincare Application" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0">
+    <Text id="title-text" text="Skincare Application" wrappingWidth="301.7739133834839" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0">
       <font>
-         <Font size="24.0" />
+         <Font size="31.0" />
       </font></Text>
 
     <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
 
-    <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <TextField fx:id="usernameField" prefHeight="26.0" prefWidth="285.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
 
     <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
 
@@ -24,12 +24,12 @@
 
     <Label text="Role:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
 
-    <ChoiceBox fx:id="role" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
-    </ChoiceBox>
+    <ChoiceBox fx:id="role" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
 
     <Text fx:id="registrationMessage" GridPane.columnIndex="1" GridPane.rowIndex="7" />
     <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="5">
         <Button onAction="#handleRegisterAction" text="Register" />
+        <Button onAction="#handleBack" text="Back" />
     </HBox>
    <columnConstraints>
       <ColumnConstraints />

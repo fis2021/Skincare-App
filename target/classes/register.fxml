@@ -11,7 +11,7 @@
     </padding>
     <Text id="title-text" text="Skincare Application" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0">
       <font>
-         <Font size="24.0" />
+         <Font size="31.0" />
       </font></Text>
 
     <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
@@ -24,12 +24,12 @@
 
     <Label text="Role:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
 
-    <ChoiceBox fx:id="role" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
-    </ChoiceBox>
+    <ChoiceBox fx:id="role" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
 
     <Text fx:id="registrationMessage" GridPane.columnIndex="1" GridPane.rowIndex="7" />
     <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="5">
         <Button onAction="#handleRegisterAction" text="Register" />
+        <Button onAction="#handleBack" text="Back" />
     </HBox>
    <columnConstraints>
       <ColumnConstraints />

@@ -40,7 +40,7 @@ public class LoginController {
             String role = getUserRole(usernameField.getText(), passwordField.getText());
             User.setCurrentUser(usernameField.getText());
             if(role.equals("Client")){
-                Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("pageUser.fxml"));
+                Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("pageCustomer.fxml"));
                 Scene nextScene = new Scene(root, 800, 600);
 
                 primary.setScene(nextScene);
