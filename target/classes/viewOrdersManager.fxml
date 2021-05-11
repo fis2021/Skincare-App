@@ -30,7 +30,7 @@
             <Insets left="50.0" right="50.0" top="20.0" />
         </padding>
         <top>
-            <Label fx:id="viewOrdersButton" alignment="CENTER" prefHeight="5.0" prefWidth="260.0" text="Orders" BorderPane.alignment="CENTER">
+            <Label alignment="CENTER" prefHeight="5.0" prefWidth="260.0" text="ORDERS" BorderPane.alignment="CENTER">
                 <font>
                     <Font size="20.0" />
                 </font>

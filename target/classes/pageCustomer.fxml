@@ -8,7 +8,7 @@
       fx:controller="org.loose.fis.sre.controllers.CustomerController">
     <BorderPane prefHeight="250.0" prefWidth="600.0">
         <left>
-        <Button mnemonicParsing="false" prefHeight="62.0" prefWidth="136.0" text="Ask for help"
+        <Button fx:id="helpButton" mnemonicParsing="false" onAction="#handleHelpButtonAction" prefHeight="62.0" prefWidth="136.0" text="Ask for help"
                 BorderPane.alignment="CENTER">
             <font>
                 <Font size="18.0"/>
@@ -16,7 +16,7 @@
         </Button>
         </left>
         <right>
-        <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="150.0" text="Search..."
+        <Button fx:id="searchButton" mnemonicParsing="false" onAction="#handlesearchButtonAction" prefHeight="64.0" prefWidth="150.0" text="Search..."
                 BorderPane.alignment="CENTER">
             <font>
                 <Font size="18.0"/>
