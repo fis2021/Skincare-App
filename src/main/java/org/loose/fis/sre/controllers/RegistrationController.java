@@ -13,6 +13,7 @@ import org.loose.fis.sre.exceptions.UsernameAlreadyExistsException;
 import org.loose.fis.sre.services.UserService;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class RegistrationController {
 
@@ -34,7 +35,7 @@ public class RegistrationController {
     @FXML
     public void handleBack() throws IOException {
         Stage primary = (Stage) registrationMessage.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("login.fxml"));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("login.fxml")));
         Scene nextScene = new Scene(root, 800, 600);
 
         primary.setScene(nextScene);
