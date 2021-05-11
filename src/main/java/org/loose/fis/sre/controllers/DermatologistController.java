@@ -27,7 +27,7 @@ public class DermatologistController {
     }
     public void handleLogOutButtonAction() throws Exception{
         Stage window = (Stage) logOutButton.getScene().getWindow();
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("login.fxml")));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("login.fxml"));
         window.setScene(new Scene(root, 800,600));
     }
 

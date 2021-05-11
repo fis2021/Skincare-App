@@ -26,9 +26,9 @@
     </BorderPane>
     <HBox alignment="CENTER" prefHeight="150.0" prefWidth="600.0" style="-fx-spacing: 150;"/>
     <HBox alignment="CENTER" prefHeight="150.0" prefWidth="600.0" style="-fx-spacing: 150;">
-        <Button fx:id="logOutButton" alignment="CENTER" mnemonicParsing="false" prefWidth="150.0" text="Log out">
+        <Button fx:id="logOutButton" mnemonicParsing="false" onAction="#handleLogOutButtonAction" prefWidth="150.0" text="Log out">
             <font>
-                <Font size="18.0"/>
+                <Font size="18.0" />
             </font>
         </Button>
     </HBox>

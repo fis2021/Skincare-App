@@ -18,9 +18,9 @@
         </HBox>
         <HBox alignment="CENTER" prefHeight="160.0" prefWidth="200.0">
             <children>
-                <Button  mnemonicParsing="false" onAction="#handleLogOutButtonAction" prefWidth="150.0" text="Log out">
+                <Button fx:id="logOutButton" mnemonicParsing="false" onAction="#handleLogOutButtonAction" prefWidth="150.0" text="Log out">
                     <font>
-                        <Font size="16.0" />
+                        <Font size="18.0" />
                     </font>
                 </Button>
             </children>
