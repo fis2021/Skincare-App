@@ -13,14 +13,14 @@ import org.loose.fis.sre.exceptions.AccountException;
 import org.loose.fis.sre.exceptions.IncorrectPasswordException;
 import org.loose.fis.sre.model.User;
 
+import java.util.Objects;
+
 import static org.loose.fis.sre.services.UserService.getUserRole;
 
 
 public class LoginController {
-
-    public Button loginButton;
     @FXML
-    private Button createAccountButton;
+    private Button loginButton, getCreateAccountButton;
 
     @FXML
     private Text registrationMessage;
@@ -40,21 +40,21 @@ public class LoginController {
             String role = getUserRole(usernameField.getText(), passwordField.getText());
             User.setCurrentUser(usernameField.getText());
             if(role.equals("Client")){
-                Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("pageCustomer.fxml"));
+                Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("pageCustomer.fxml")));
                 Scene nextScene = new Scene(root, 800, 600);
 
                 primary.setScene(nextScene);
             }
             else
                 if(role.equals("Manager")){
-                Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("pageManager.fxml"));
+                Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("pageManager.fxml")));
                 Scene nextScene = new Scene(root, 800, 600);
 
                 primary.setScene(nextScene);
                 }
                 else
                 {
-                    Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("pageDermatologist.fxml"));
+                    Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("pageDermatologist.fxml")));
                     Scene nextScene = new Scene(root, 800, 600);
 
                     primary.setScene(nextScene);
@@ -67,7 +67,7 @@ public class LoginController {
     public void handleCreateAccountAction() throws Exception{
 
         Stage primary = (Stage) registrationMessage.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("register.fxml"));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("register.fxml")));
         Scene nextScene = new Scene(root, 800, 600);
 
         primary.setScene(nextScene);
