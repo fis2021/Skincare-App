@@ -17,23 +17,22 @@ import java.util.Objects;
 
 import static org.loose.fis.sre.services.UserService.getUserRole;
 public class ManagerController {
+    public Button viewOrdersButton;
     @FXML
     private Button MakeOffersButton;
     @FXML
     private Button logOutButton;
-    @FXML
-    private Button OrdersButton;
 
 
     public void handleLogOutButtonAction() throws Exception{
         Stage window = (Stage) logOutButton.getScene().getWindow();
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("login.fxml")));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("login.fxml"));
         window.setScene(new Scene(root, 800,600));
     }
 
     public void handleViewOrdersButtonAction() throws Exception{
-        Stage window = (Stage) logOutButton.getScene().getWindow();
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("viewOrdersManager.fxml")));
+        Stage window = (Stage) viewOrdersButton.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("viewOrdersManager.fxml"));
         window.setScene(new Scene(root, 800,600));
     }
     public void handleMakeOffersButtonAction() throws Exception{
