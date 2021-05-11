@@ -52,8 +52,6 @@ public class ViewOrdersManagerController {
 
             }
         }
-
-
     }
 
     public void handleRejectButtonAction() {

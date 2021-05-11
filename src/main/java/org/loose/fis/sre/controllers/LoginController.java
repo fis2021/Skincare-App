@@ -20,7 +20,7 @@ import static org.loose.fis.sre.services.UserService.getUserRole;
 
 public class LoginController {
     @FXML
-    private Button loginButton, getCreateAccountButton;
+    private Button loginButton, createAccountButton;
 
     @FXML
     private Text registrationMessage;

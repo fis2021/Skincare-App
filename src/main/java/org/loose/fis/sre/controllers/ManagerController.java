@@ -36,6 +36,7 @@ public class ManagerController {
         window.setScene(new Scene(root, 800,600));
     }
     public void handleMakeOffersButtonAction() throws Exception{
-
-    }
+        Stage window = (Stage) MakeOffersButton.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("MakeOfferManager.fxml"));
+        window.setScene(new Scene(root, 800,600));    }
 }
