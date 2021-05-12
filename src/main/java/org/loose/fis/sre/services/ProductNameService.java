@@ -26,9 +26,9 @@ public class ProductNameService {
         productNameRepository = database.getRepository(ProductName.class);
     }
 
-    public static void addName(String  name, int price) throws NameAlreadyExistsException {
+    public static void addName(String  name, String category,int price) throws NameAlreadyExistsException {
         checkNameDoesNotAlreadyExist(name);
-        productNameRepository.insert(new ProductName(name, price));
+        productNameRepository.insert(new ProductName(name,category, price));
     }
 
     public static void removeName(ProductName productName) {
@@ -50,13 +50,6 @@ public class ProductNameService {
         return list;
     }
 
-    public static void modifyPrice(String name, int newPrice) {
-        for(ProductName productName : productNameRepository.find()){
-            if(Objects.equals(name, productName.getName())) {
-                productNameRepository.update(eq("name", name), new ProductName(name, newPrice));
-            }
-        }
-    }
 
     public static ProductName getProductName(String name){
         for(ProductName productName : productNameRepository.find())

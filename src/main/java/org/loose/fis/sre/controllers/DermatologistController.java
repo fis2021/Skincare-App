@@ -18,7 +18,7 @@ import java.util.Objects;
 import static org.loose.fis.sre.services.UserService.getUserRole;
 public class DermatologistController {
     @FXML
-    public Button Questions;
+    public Button questionsButton;
     @FXML
     private Button logOutButton;
 
