@@ -15,7 +15,7 @@ import java.io.IOException;
 public class AddProductController {
 
     @FXML
-    private ChoiceBox category;
+    private ChoiceBox<String> category;
 
     @FXML
     private TextField name;
