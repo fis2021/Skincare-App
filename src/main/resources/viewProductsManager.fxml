@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.ViewProductsManagerController">
+    <Button mnemonicParsing="false" onAction="#handleBackButtonAction" text="Back">
+        <VBox.margin>
+            <Insets left="15.0" top="15.0" />
+        </VBox.margin>
+    </Button>
+    <AnchorPane>
+        <children>
+            <BorderPane prefHeight="480.0" prefWidth="681.0">
+                <padding>
+                    <Insets bottom="50.0" left="50.0" right="20.0" top="30.0" />
+                </padding>
+                <top>
+                    <Label alignment="CENTER" prefHeight="5.0" prefWidth="260.0" text="Products" BorderPane.alignment="CENTER">
+                        <font>
+                            <Font size="20.0" />
+                        </font>
+                    </Label>
+                </top>
+                <center>
+                    <TableView fx:id="typeTable" prefHeight="370.0" prefWidth="648.0" BorderPane.alignment="CENTER">
+                        <columns>
+                            <TableColumn fx:id="productNameColumn" prefWidth="273.60000002384186" text="Name" />
+                            <TableColumn fx:id="productCategoryColumn" prefWidth="224.0" text="Category" />
+                            <TableColumn fx:id="productPriceColumn" prefWidth="114.19998168945312" text="Price" />
+                        </columns>
+                    </TableView>
+            </center>
+            </BorderPane>
+            <BorderPane layoutX="410.0" layoutY="6.0" prefHeight="480.0" prefWidth="400.0">
+                <padding>
+                    <Insets bottom="50.0" left="20.0" right="50.0" top="30.0" />
+                </padding>
+            </BorderPane>
+        </children>
+    </AnchorPane>
+    <HBox alignment="TOP_CENTER" prefHeight="120.0" prefWidth="800.0" style="-fx-spacing: 50;">
+        <Button mnemonicParsing="false" onAction="#handleAddButtonAction" prefWidth="150.0" text="Add">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#handleDeleteNameButtonAction" prefWidth="150.0" text="Delete">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Button>
+        
+        <Button mnemonicParsing="false" onAction="#handleModifyPriceButtonAction" prefWidth="150.0" text="Change Price">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Button>
+    </HBox>
+</VBox>
