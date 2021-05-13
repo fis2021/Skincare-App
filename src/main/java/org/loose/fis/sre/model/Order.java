@@ -33,7 +33,7 @@ public class Order {
         this.client=client;
     }
 
-    public ProductName getProductType() {
+    public ProductName getProductName() {
         return productName;
     }
 

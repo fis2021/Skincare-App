@@ -13,7 +13,8 @@ public class ProductName {
         this.price=price;
     }
 
-
+    public ProductName() {
+    }
     public String getName() {
         return name;
     }
@@ -49,7 +50,7 @@ public class ProductName {
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, price);
+        return Objects.hash(name,category, price);
     }
 
     public String toString(){
