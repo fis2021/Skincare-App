@@ -3,15 +3,11 @@ package org.loose.fis.sre.services;
 import org.dizitart.no2.Nitrite;
 import org.dizitart.no2.objects.ObjectRepository;
 import org.loose.fis.sre.exceptions.NameAlreadyExistsException;
-import org.loose.fis.sre.exceptions.UsernameAlreadyExistsException;
 import org.loose.fis.sre.model.ProductName;
-import org.loose.fis.sre.model.User;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
-import static org.dizitart.no2.objects.filters.ObjectFilters.eq;
 import static org.loose.fis.sre.services.FileSystemService.getPathToFile;
 
 public class ProductNameService {
