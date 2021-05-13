@@ -14,7 +14,12 @@
                         <Font size="18.0" />
                     </font>
                 </Button>
-                <Button  fx:id="viewOrdersButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleViewOrdersButtonAction" prefWidth="150.0" text="Orders">
+                <Button fx:id="viewProductsButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleViewProductsButtonAction" prefWidth="150.0" text="View Products">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="OrdersButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleViewOrdersButtonAction" prefWidth="150.0" text="Orders">
                     <font>
                         <Font size="18.0" />
                     </font>

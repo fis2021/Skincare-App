@@ -24,6 +24,9 @@ public class ManagerController {
     @FXML
     private Button logOutButton;
     @FXML
+    private Button viewProductsButton;
+
+    @FXML
     private Button OrdersButton;
     @FXML
     private ChoiceBox category;
@@ -41,21 +44,22 @@ public class ManagerController {
     }
 
     public void handleViewOrdersButtonAction() throws Exception{
-        Stage window = (Stage) logOutButton.getScene().getWindow();
+        Stage window = (Stage) OrdersButton.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("viewOrdersManager.fxml"));
         window.setScene(new Scene(root, 800,600));
     }
-    public void handleAddButtonAction() throws Exception {
 
-        ProductNameService.checkNameDoesNotAlreadyExist(name.getText());
-        ProductNameService.addName(name.getText(),category.getSelectionModel().getSelectedItem().toString() ,Integer.parseInt(price.getText()));
+    public void handleViewProductsButtonAction() throws Exception {
 
+        Stage window = (Stage) viewProductsButton.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("viewProductsManager.fxml"));
-        Stage window = (Stage) category.getScene().getWindow();
-        window.setScene(new Scene(root, 800, 600));
-
+        window.setScene(new Scene(root, 800,600));
     }
+
     public void handleMakeOffersButtonAction() throws Exception{
+        Stage window = (Stage) MakeOffersButton.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("MakeOffersManager.fxml"));
+        window.setScene(new Scene(root, 800,600));
 
     }
 }

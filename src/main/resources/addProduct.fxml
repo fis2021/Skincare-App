@@ -38,17 +38,17 @@
 
     <ChoiceBox fx:id="category" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
     </ChoiceBox>
-
+    <Text fx:id="addMessage" id="addMessage" GridPane.columnIndex="1" GridPane.rowIndex="5" />
 
     <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="4">
-        <Button onAction="#handleCancelButtonAction" text="Back">
+        <Button id="backButton2" onAction="#handleBack2ButtonAction" text="Back">
             <font>
                 <Font size="20.0" />
             </font></Button>
     </HBox>
 
     <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="4">
-        <Button onAction="#handleAddButtonAction" text="Add">
+        <Button id="addButton2" onAction="#handleAddButtonAction" text="Add">
             <font>
                 <Font size="20.0" />
             </font></Button>

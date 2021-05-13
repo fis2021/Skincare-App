@@ -4,22 +4,22 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.ManagerController" >
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.ManagerController">
     <children>
         <BorderPane prefHeight="250.0" prefWidth="600.0" />
         <HBox alignment="CENTER" prefHeight="150.0" prefWidth="600.0" style="-fx-spacing: 150;">
             <children>
-                <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleMakeOffersButtonAction" prefWidth="150.0" text="Make offer">
+                <Button fx:id="MakeOffersButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleMakeOffersButtonAction" prefWidth="150.0" text="Make offer">
                     <font>
                         <Font size="18.0" />
                     </font>
                 </Button>
-                <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleAddButtonAction" prefWidth="150.0" text="Add Products">
+                <Button fx:id="viewProductsButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleViewProductsButtonAction" prefWidth="150.0" text="View Products">
                     <font>
                         <Font size="18.0" />
                     </font>
                 </Button>
-                <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleViewOrdersButtonAction" prefWidth="150.0" text="Orders">
+                <Button fx:id="OrdersButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleViewOrdersButtonAction" prefWidth="150.0" text="Orders">
                     <font>
                         <Font size="18.0" />
                     </font>
