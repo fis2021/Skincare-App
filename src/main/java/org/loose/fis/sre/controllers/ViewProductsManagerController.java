@@ -25,7 +25,7 @@ public class ViewProductsManagerController {
     @FXML
     private TableColumn<ProductName, Integer> productPriceColumn;
     @FXML
-    private Button addButton;
+    private Button addButton1;
 
 
     public void initialize() {
@@ -37,7 +37,7 @@ public class ViewProductsManagerController {
     }
 
     public void handleAddButtonAction() throws Exception{
-        Stage window = (Stage) addButton.getScene().getWindow();
+        Stage window = (Stage) productTable.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("addProduct.fxml"));
         window.setScene(new Scene(root, 800,600));
     }
