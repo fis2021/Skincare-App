@@ -5,27 +5,27 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane alignment="center" hgap="20" prefHeight="600" prefWidth="800" vgap="20" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.AddProductController">
+<GridPane alignment="center" hgap="20" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D2B4DE;" vgap="20" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.sa.controllers.AddProductController">
     <padding>
         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
     </padding>
 
     <Label text="Name" GridPane.columnIndex="0" GridPane.rowIndex="1">
-        <font>
-            <Font size="30.0" />
-        </font></Label>
+      <font>
+         <Font name="System Bold Italic" size="18.0" />
+      </font></Label>
 
-    <TextField fx:id="name" GridPane.columnIndex="1" GridPane.rowIndex="1">
+    <TextField fx:id="name" style="-fx-background-color: #D2B4DE; -fx-border-color: #4A235A; -fx-border-insets: 0; -fx-border-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="1">
         <font>
             <Font size="20.0" />
         </font></TextField>
 
     <Label text="Price" GridPane.columnIndex="0" GridPane.rowIndex="2">
         <font>
-            <Font size="30.0" />
+            <Font name="System Bold Italic" size="18.0" />
         </font></Label>
 
-    <TextField fx:id="price" GridPane.columnIndex="1" GridPane.rowIndex="2">
+    <TextField fx:id="price" style="-fx-background-color: #D2B4DE; -fx-border-color: #4A235A; -fx-border-insets: 0; -fx-border-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="2">
         <font>
             <Font size="20.0" />
         </font></TextField>
@@ -33,29 +33,29 @@
 
     <Label text="Category" GridPane.columnIndex="0" GridPane.rowIndex="3">
         <font>
-            <Font size="30.0" />
+            <Font name="System Bold Italic" size="18.0" />
         </font></Label>
 
-    <ChoiceBox fx:id="category" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+    <ChoiceBox fx:id="category" prefWidth="150.0" style="-fx-background-color: #4A235A;" GridPane.columnIndex="1" GridPane.rowIndex="3">
     </ChoiceBox>
-    <Text fx:id="addMessage" id="addMessage" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+    <Text id="addMessage" fx:id="addMessage" GridPane.columnIndex="1" GridPane.rowIndex="5" />
 
     <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="4">
-        <Button id="backButton2" onAction="#handleBack2ButtonAction" text="Back">
+        <Button id="backButton2" onAction="#handleBack2ButtonAction" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #4A235A; -fx-background-radius: 20; -fx-background-insets: 0;" text="Back" textFill="WHITE">
             <font>
-                <Font size="20.0" />
+                <Font name="System Bold Italic" size="18.0" />
             </font></Button>
     </HBox>
 
     <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="4">
-        <Button id="addButton2" onAction="#handleAddButtonAction" text="Add">
+        <Button id="addButton2" alignment="CENTER" contentDisplay="CENTER" onAction="#handleAddButtonAction" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="Add" textFill="WHITE">
             <font>
-                <Font size="20.0" />
+                <Font name="System Bold Italic" size="18.0" />
             </font></Button>
     </HBox>
     <columnConstraints>
-        <ColumnConstraints />
-        <ColumnConstraints />
+        <ColumnConstraints maxWidth="114.0" minWidth="62.0" prefWidth="85.0" />
+        <ColumnConstraints maxWidth="306.8" minWidth="254.8" prefWidth="283.8" />
     </columnConstraints>
     <rowConstraints>
         <RowConstraints />
