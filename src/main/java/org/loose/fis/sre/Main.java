@@ -6,10 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.loose.fis.sre.model.ProductName;
-import org.loose.fis.sre.services.FileSystemService;
-import org.loose.fis.sre.services.UserService;
-import org.loose.fis.sre.services.ProductNameService;
-import org.loose.fis.sre.services.OrderService;
+import org.loose.fis.sre.services.*;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Objects;
@@ -22,6 +20,7 @@ public class Main extends Application {
         UserService.initDatabase();
         ProductNameService.initDatabase();
         OrderService.initDatabase();
+        OfferService.initDatabase();
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("login.fxml")));
         primaryStage.setTitle("Skincare App Registration");
         primaryStage.setScene(new Scene(root, 800, 600));

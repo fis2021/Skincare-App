@@ -37,8 +37,11 @@
             <Font name="System Bold Italic" size="18.0" />
         </font></Label>
 
-    <ChoiceBox fx:id="category" prefWidth="150.0" style="-fx-background-color: #4A235A;" GridPane.columnIndex="1" GridPane.rowIndex="3">
-    </ChoiceBox>
+    <TextField fx:id="category" style="-fx-background-color: #D2B4DE; -fx-border-color: #4A235A; -fx-border-insets: 0; -fx-border-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <font>
+            <Font size="20.0" />
+        </font></TextField>
+
     <Text id="addMessage" fx:id="addMessage" GridPane.columnIndex="1" GridPane.rowIndex="5" />
 
     <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="4">

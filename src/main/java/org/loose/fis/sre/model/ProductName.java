@@ -45,7 +45,9 @@ public class ProductName {
         if (o == null || getClass() != o.getClass()) return false;
         ProductName productName = (ProductName) o;
         if(!Objects.equals(name, productName.name)) return false;
-        return price==0 ? price== productName.price : productName.price==0;
+        if(!Objects.equals(category, productName.category)) return false;
+        return price==0 ? price== productName.price  : productName.price==0;
+
     }
 
     @Override
@@ -54,6 +56,6 @@ public class ProductName {
     }
 
     public String toString(){
-        return name;
+        return name+category+price;
     }
 }

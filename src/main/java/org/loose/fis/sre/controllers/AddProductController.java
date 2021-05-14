@@ -20,7 +20,7 @@ import java.util.Objects;
 public class AddProductController {
 
     @FXML
-    private ChoiceBox category;
+    private TextField category;
 
     @FXML
     private TextField name;
@@ -31,16 +31,13 @@ public class AddProductController {
 
     @FXML
     private Text addMessage;
-    @FXML
-    public void initialize() {
-        category.getItems().addAll("Dry Skin", "Oily Skin", "Sensitive Skin");
-    }
+
 
     public void handleAddButtonAction()  {
 
         try {
             ProductNameService.checkNameDoesNotAlreadyExist(name.getText());
-            ProductNameService.addName(name.getText(), (String) category.getValue(), Integer.parseInt(price.getText()));
+            ProductNameService.addName(name.getText(), category.getText(), Integer.parseInt(price.getText()));
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("viewProductsManager.fxml")));
             Stage window = (Stage) addMessage.getScene().getWindow();
             window.setScene(new Scene(root, 800, 600));

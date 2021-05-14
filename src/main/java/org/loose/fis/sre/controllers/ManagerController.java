@@ -29,7 +29,7 @@ public class ManagerController {
     @FXML
     private Button OrdersButton;
     @FXML
-    private ChoiceBox category;
+    private TextField category;
 
     @FXML
     private TextField name;
@@ -58,7 +58,7 @@ public class ManagerController {
 
     public void handleMakeOffersButtonAction() throws Exception{
         Stage window = (Stage) MakeOffersButton.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("MakeOffersManager.fxml"));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("MakeOffersManager.fxml")));
         window.setScene(new Scene(root, 800,600));
 
     }
