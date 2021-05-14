@@ -15,11 +15,12 @@ import org.loose.fis.sre.model.ProductName;
 import org.loose.fis.sre.services.ProductNameService;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class AddProductController {
 
     @FXML
-    private ChoiceBox<String> category;
+    private ChoiceBox category;
 
     @FXML
     private TextField name;
@@ -39,8 +40,8 @@ public class AddProductController {
 
         try {
             ProductNameService.checkNameDoesNotAlreadyExist(name.getText());
-            ProductNameService.addName(name.getText(), category.getValue(), Integer.parseInt(price.getText()));
-            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("viewProductsManager.fxml"));
+            ProductNameService.addName(name.getText(), (String) category.getValue(), Integer.parseInt(price.getText()));
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("viewProductsManager.fxml")));
             Stage window = (Stage) addMessage.getScene().getWindow();
             window.setScene(new Scene(root, 800, 600));
 

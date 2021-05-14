@@ -40,7 +40,7 @@
                     </TableView>
                 </center>
                 <bottom>
-                    <Button fx:id="addButton" mnemonicParsing="false" onAction="#handleAddButtonAction" prefHeight="0.0" prefWidth="150.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="Add" textFill="WHITE" BorderPane.alignment="BOTTOM_CENTER">
+                    <Button fx:id="addButton1" mnemonicParsing="false" onAction="#handleAddButtonAction" prefHeight="0.0" prefWidth="150.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="Add" textFill="WHITE" BorderPane.alignment="BOTTOM_CENTER">
                         <font>
                             <Font name="System Bold Italic" size="12.0" />
                         </font>
@@ -49,5 +49,5 @@
             </BorderPane>
         </children>
     </AnchorPane>
-    <HBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-spacing: 50;" />
+
 </VBox>
