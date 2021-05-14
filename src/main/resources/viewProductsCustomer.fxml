@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D2B4DE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.ViewProductsCustomerController">
+    <Button fx:id="backButton5" mnemonicParsing="false" onAction="#handleBackButton5Action" prefWidth="100.0" style="-fx-background-insets: 0; -fx-background-radius: 20; -fx-background-color: #4A235A;" text="Back" textFill="WHITE">
+        <VBox.margin>
+            <Insets left="15.0" top="15.0" />
+        </VBox.margin>
+        <font>
+            <Font name="System Bold Italic" size="12.0" />
+        </font>
+    </Button>
+    <AnchorPane prefHeight="272.0" prefWidth="600.0" style="-fx-background-color: #D2B4DE;">
+        <children>
+            <BorderPane layoutX="-1.0" layoutY="-1.0" prefHeight="406.0" prefWidth="601.0" style="-fx-background-color: #D2B4DE;" AnchorPane.bottomAnchor="-133.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0">
+                <padding>
+                    <Insets bottom="50.0" left="50.0" right="20.0" top="30.0" />
+                </padding>
+                <top>
+                    <Label alignment="CENTER" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #D2B4DE;" text="Products" textFill="WHITE" BorderPane.alignment="CENTER">
+                        <font>
+                            <Font name="System Bold Italic" size="31.0" />
+                        </font>
+                    </Label>
+                </top>
+                <center>
+                    <TableView fx:id="productTable" prefHeight="326.0" prefWidth="467.0" style="-fx-background-color: #E8DAEF; -fx-border-color: #4A235A;" BorderPane.alignment="CENTER">
+                        <columns>
+                            <TableColumn fx:id="productNameColumn" prefWidth="250.0" text="Name" />
+                            <TableColumn fx:id="productCategoryColumn" prefWidth="150.0" text="Category" />
+                            <TableColumn fx:id="productPriceColumn" prefWidth="126.00003051757812" text="Price" />
+                        </columns>
+                        <opaqueInsets>
+                            <Insets />
+                        </opaqueInsets>
+                    </TableView>
+                </center>
+                <bottom>
+                </bottom>
+            </BorderPane>
+        </children>
+    </AnchorPane>
+
+</VBox>

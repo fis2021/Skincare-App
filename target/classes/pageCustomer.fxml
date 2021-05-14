@@ -4,32 +4,38 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.CustomerController">
-    <BorderPane prefHeight="250.0" prefWidth="600.0">
+<VBox prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D2B4DE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.CustomerController">
+    <BorderPane prefHeight="252.0" prefWidth="600.0" style="-fx-background-color: #D2B4DE;">
         <left>
-            <Button fx:id="helpButton" mnemonicParsing="false" onAction="#handleHelpButtonAction" prefWidth="150.0" text="Ask for help" BorderPane.alignment="CENTER">
+            <Button fx:id="helpButton" mnemonicParsing="false" onAction="#handleHelpButtonAction" prefWidth="150.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="Ask for help" textFill="WHITE" BorderPane.alignment="CENTER">
                 <font>
-                    <Font size="18.0" />
+                    <Font name="System Bold Italic" size="18.0" />
                 </font>
             </Button>
         </left>
-        <right>
-            <Button fx:id="searchButton" mnemonicParsing="false" onAction="#handlesearchButtonAction" prefWidth="150.0" text="Search..." BorderPane.alignment="CENTER_RIGHT">
+      <right>
+            <Button fx:id="viewProductsButton" mnemonicParsing="false" onAction="#handleViewProductsButtonAction" prefWidth="150.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="View Products" textFill="WHITE" BorderPane.alignment="CENTER">
                 <font>
-                    <Font size="18.0" />
+                    <Font name="System Bold Italic" size="18.0" />
                 </font>
             </Button>
-        </right>
-    </BorderPane>
-    <HBox alignment="CENTER" prefHeight="150.0" prefWidth="600.0" style="-fx-spacing: 150;" />
-    <HBox alignment="CENTER" prefHeight="150.0" prefWidth="600.0" style="-fx-spacing: 150;">
-        <Button fx:id="logOutButton" mnemonicParsing="false" onAction="#handleLogOutButtonAction" prefWidth="150.0" text="Log out">
+      </right>
+      <center>
+         <Button mnemonicParsing="false" prefWidth="150.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="FidelityPoints" textFill="WHITE" BorderPane.alignment="CENTER">
             <font>
-                <Font size="19.0" />
+               <Font name="System Bold Italic" size="18.0" />
+            </font>
+         </Button>
+      </center>
+    </BorderPane>
+    <HBox alignment="CENTER" prefHeight="0.0" prefWidth="600.0" style="-fx-spacing: 150;" />
+    <HBox alignment="CENTER" prefHeight="232.0" prefWidth="600.0" style="-fx-spacing: 150; -fx-background-color: #D2B4DE;">
+        <Button fx:id="logOutButton" mnemonicParsing="false" onAction="#handleLogOutButtonAction" prefWidth="150.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="Log out" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
             </font>
         </Button>
     </HBox>
 
 
 </VBox>
-
