@@ -4,21 +4,30 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.CustomerController">
-
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.CustomerController">
+    <BorderPane prefHeight="250.0" prefWidth="600.0">
+        <left>
+            <Button fx:id="helpButton" mnemonicParsing="false" onAction="#handleHelpButtonAction" prefWidth="150.0" text="Ask for help" BorderPane.alignment="CENTER">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Button>
+        </left>
+        <right>
+            <Button fx:id="searchButton" mnemonicParsing="false" onAction="#handlesearchButtonAction" prefWidth="150.0" text="Search..." BorderPane.alignment="CENTER_RIGHT">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Button>
+        </right>
+    </BorderPane>
+    <HBox alignment="CENTER" prefHeight="150.0" prefWidth="600.0" style="-fx-spacing: 150;" />
     <HBox alignment="CENTER" prefHeight="150.0" prefWidth="600.0" style="-fx-spacing: 150;">
-      <children>
-        <Button fx:id="helpButton" mnemonicParsing="false" onAction="#handleHelpButtonAction" prefHeight="71.0" prefWidth="160.0" text="Ask for help">
+        <Button fx:id="logOutButton" mnemonicParsing="false" onAction="#handleLogOutButtonAction" prefWidth="150.0" text="Log out">
             <font>
-                <Font size="18.0" />
+                <Font size="19.0" />
             </font>
         </Button>
-      </children></HBox>
-    <HBox alignment="CENTER" prefHeight="150.0" prefWidth="600.0" style="-fx-spacing: 150;" />
-     <Button fx:id="logOutButton" mnemonicParsing="false" onAction="#handleLogOutButtonAction" prefHeight="49.0" prefWidth="159.0" text="Log out">
-         <font>
-             <Font size="19.0" />
-         </font>
-     </Button>
+    </HBox>
 
 </VBox>
