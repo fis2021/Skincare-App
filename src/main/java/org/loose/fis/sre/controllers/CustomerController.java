@@ -34,4 +34,7 @@ public class CustomerController {
     public void handleHelpButtonAction() throws Exception{
 
     }
+
+    public void handlesearchButtonAction() {
+    }
 }

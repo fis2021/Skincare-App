@@ -14,6 +14,7 @@ import javafx.scene.control.Button;
 import org.loose.fis.sre.model.ProductName;
 import org.loose.fis.sre.services.ProductNameService;
 import java.util.List;
+
 public class ViewProductsManagerController {
 
     @FXML
