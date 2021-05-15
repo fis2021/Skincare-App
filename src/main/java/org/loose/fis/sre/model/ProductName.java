@@ -1,8 +1,9 @@
 package org.loose.fis.sre.model;
-
+import org.dizitart.no2.objects.Id;
 import java.util.Objects;
 
 public class ProductName {
+    @Id
     private String name;
     private String category;
     private int price;
@@ -56,6 +57,6 @@ public class ProductName {
     }
 
     public String toString(){
-        return name+category+price;
+        return name +" " +category;
     }
 }

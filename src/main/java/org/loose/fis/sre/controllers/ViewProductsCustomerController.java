@@ -2,6 +2,7 @@ package org.loose.fis.sre.controllers;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -42,8 +43,15 @@ public class ViewProductsCustomerController {
         window.setScene(new Scene(root, 800,600));
     }
 
+    public void handleBuyButtonAction() throws Exception{
+        Stage window = (Stage) productTable.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("buy.fxml"));
+        window.setScene(new Scene(root, 800,600));
+    }
+
     private ObservableList<ProductName> categories = FXCollections.observableArrayList(ProductNameService.getAllProductNames());
     public List <ProductName> getProductNamesFromTable() {
         return productTable.getItems();
     }
+
 }

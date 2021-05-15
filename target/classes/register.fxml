@@ -33,7 +33,7 @@
             <Font name="System Bold Italic" size="12.0" />
         </font></Label>
 
-    <ChoiceBox fx:id="role" prefWidth="150.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-border-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <ChoiceBox fx:id="role" prefWidth="150.0" style="-fx-background-color: #D2B4DE; -fx-background-insets: 0; -fx-border-radius: 20; -fx-border-color: #4A235A;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
 
     <Text fx:id="registrationMessage" GridPane.columnIndex="1" GridPane.rowIndex="7">
         <font>
@@ -64,4 +64,3 @@
         <RowConstraints />
     </rowConstraints>
 </GridPane>
-
