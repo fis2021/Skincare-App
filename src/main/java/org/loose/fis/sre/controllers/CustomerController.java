@@ -22,6 +22,8 @@ public class CustomerController {
     private Button logOutButton;
     @FXML
     private Button viewProductsButton;
+    @FXML
+    private Button helpButton;
 
 
     public void handleLogOutButtonAction() throws Exception{
@@ -37,6 +39,9 @@ public class CustomerController {
         window.setScene(new Scene(root, 800,600));
     }
     public void handleHelpButtonAction() throws Exception{
+        Stage window = (Stage) helpButton.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("askQuestions.fxml"));
+        window.setScene(new Scene(root, 800,600));
 
     }
 

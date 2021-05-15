@@ -9,7 +9,7 @@
         <BorderPane prefHeight="250.0" prefWidth="600.0" style="-fx-background-color: #D2B4DE;" />
         <HBox alignment="CENTER" prefHeight="150.0" prefWidth="600.0" style="-fx-spacing: 150; -fx-background-color: #D2B4DE;">
             <children>
-                <Button fx:id="questionsButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleQuestionsButtonAction" prefWidth="150.0" style="-fx-background-insets: 0; -fx-background-radius: 20; -fx-background-color: #4A235A;" text="Questions" textFill="WHITE">
+                <Button fx:id="answersButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleAnswersButtonAction" prefWidth="150.0" style="-fx-background-insets: 0; -fx-background-radius: 20; -fx-background-color: #4A235A;" text="Give Answers" textFill="WHITE">
                     <font>
                         <Font name="System Bold Italic" size="18.0" />
                     </font>
