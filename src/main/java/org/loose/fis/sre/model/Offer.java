@@ -10,7 +10,8 @@ public class Offer {
         this.points = points;
         this.nameOffer=nameOffer;
     }
-
+    public Offer(){
+    }
     public String getNameOffer() {
         return nameOffer;
     }

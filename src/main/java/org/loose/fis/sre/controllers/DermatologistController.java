@@ -18,11 +18,14 @@ import java.util.Objects;
 import static org.loose.fis.sre.services.UserService.getUserRole;
 public class DermatologistController {
     @FXML
-    public Button questionsButton;
+    public Button answersButton;
     @FXML
     private Button logOutButton;
 
-    public void handleQuestionsButtonAction() throws Exception{
+    public void handleAnswersButtonAction() throws Exception{
+        Stage window = (Stage) answersButton.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("giveAnswers.fxml"));
+        window.setScene(new Scene(root, 800,600));
 
     }
     public void handleLogOutButtonAction() throws Exception{
