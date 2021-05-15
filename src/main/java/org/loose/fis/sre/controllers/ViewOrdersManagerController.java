@@ -85,11 +85,11 @@ public class ViewOrdersManagerController {
 
                 if (!isEmpty()) {
                     if (item.equals("Waiting"))
-                        currentRow.setStyle("-fx-background-color: blue");
+                        currentRow.setStyle("-fx-background-color: #D2B4DE\n");
                     else if (item.equals("Confirmed"))
-                        currentRow.setStyle("-fx-background-color: #49942b");
+                        currentRow.setStyle("-fx-background-color: #E8DAEF\n");
                     else
-                        currentRow.setStyle("-fx-background-color: green ");
+                        currentRow.setStyle("-fx-background-color: #ff0000 ");
                 }
             }
         });
