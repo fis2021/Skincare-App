@@ -16,7 +16,7 @@
             <Font name="System Bold Italic" size="18.0" />
         </font></Label>
 
-    <TextField fx:id="name" style="-fx-background-color: #D2B4DE; -fx-border-color: #4A235A; -fx-border-insets: 0; -fx-border-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+    <TextField fx:id="nameOffer" style="-fx-background-color: #D2B4DE; -fx-border-color: #4A235A; -fx-border-insets: 0; -fx-border-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="1">
         <font>
             <Font size="20.0" />
         </font></TextField>
@@ -26,7 +26,7 @@
             <Font name="System Bold Italic" size="18.0" />
         </font></Label>
 
-    <TextField fx:id="price" style="-fx-background-color: #D2B4DE; -fx-border-color: #4A235A; -fx-border-insets: 0; -fx-border-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+    <TextField fx:id="points" style="-fx-background-color: #D2B4DE; -fx-border-color: #4A235A; -fx-border-insets: 0; -fx-border-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="2">
         <font>
             <Font size="20.0" />
         </font></TextField>
