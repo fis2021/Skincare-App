@@ -8,19 +8,19 @@
     <children>
         <HBox layoutX="15.0" layoutY="10.0" prefHeight="34.0" prefWidth="585.0">
             <children>
-                <Button  fx:id="backButton3" mnemonicParsing="false" onAction="#handleBackButton3Action" prefWidth="100.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="Back" textFill="WHITE">
+                <Button fx:id="backButton3" mnemonicParsing="false" onAction="#handleBackButton3Action" prefWidth="100.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="Back" textFill="WHITE">
                     <font>
                         <Font name="System Bold Italic" size="12.0" />
                     </font></Button>
             </children>
         </HBox>
-      <TableView layoutX="88.0" layoutY="63.0" prefHeight="222.0" prefWidth="440.0" style="-fx-border-color: #4A235A;">
+      <TableView fx:id="offerTable" layoutX="88.0" layoutY="63.0" prefHeight="222.0" prefWidth="440.0" style="-fx-border-color: #4A235A;">
         <columns>
-          <TableColumn prefWidth="219.0" text="Offers" />
-            <TableColumn prefWidth="220.1999969482422" text="Number of FidelityPoints" />
+          <TableColumn fx:id="offerNameColumn" prefWidth="219.0" text="Offers" />
+            <TableColumn fx:id="pointsColumn" prefWidth="220.1999969482422" text="Number of FidelityPoints" />
         </columns>
       </TableView>
-      <Button layoutX="250.0" layoutY="310.0" fx:id="addButton3" mnemonicParsing="false" onAction="#handleAddButton3Action" prefWidth="100.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="Add offer" textFill="WHITE">
+      <Button fx:id="addButton3" layoutX="250.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleAddButton3Action" prefWidth="100.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="Add offer" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
