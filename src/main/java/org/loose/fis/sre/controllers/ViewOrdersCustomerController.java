@@ -49,7 +49,7 @@ public class ViewOrdersCustomerController {
                 if(!isEmpty()){
                     if(item.equals("Waiting"))
                         currentRow.setStyle("-fx-background-color: #D2B4DE\n");
-                    else if(item.equals("On its way!"))
+                    else if(item.equals("Confirmed"))
                         currentRow.setStyle("-fx-background-color: #E8DAEF\n");
                     else
                         currentRow.setStyle("-fx-background-color: red");

@@ -14,21 +14,21 @@
             </Button>
         </left>
       <right>
-            <Button fx:id="viewProductsButton" mnemonicParsing="false" onAction="#handleViewProductsButtonAction" prefWidth="150.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="View Products" textFill="WHITE" BorderPane.alignment="CENTER">
+            <Button fx:id="viewProductsButton" mnemonicParsing="false" onAction="#handleViewProductsButtonAction" prefHeight="39.0" prefWidth="197.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="Search for products" textFill="WHITE" BorderPane.alignment="CENTER">
                 <font>
                     <Font name="System Bold Italic" size="18.0" />
                 </font>
             </Button>
       </right>
       <bottom>
-         <Button fx:id="viewOrdersCButton" mnemonicParsing="false" onAction="#handleViewOrdersCButtonAction" prefWidth="150.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="View Orders" textFill="WHITE" BorderPane.alignment="CENTER">
+         <Button fx:id="viewOrdersCButton" mnemonicParsing="false" onAction="#handleViewOrdersCButtonAction" prefHeight="39.0" prefWidth="158.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="View Orders" textFill="WHITE" BorderPane.alignment="CENTER">
             <font>
                <Font name="System Bold Italic" size="18.0" />
             </font>
          </Button>
       </bottom>
       <center>
-         <Button fx:id="faqButton" mnemonicParsing="false" onAction="#handlefaqButtonAction" prefWidth="150.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="FAQ" textFill="WHITE" BorderPane.alignment="CENTER">
+         <Button fx:id="faqButton" mnemonicParsing="false" onAction="#handlefaqButtonAction" prefHeight="39.0" prefWidth="124.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="FAQ" textFill="WHITE" BorderPane.alignment="CENTER">
             <font>
                <Font name="System Bold Italic" size="18.0" />
             </font></Button>

@@ -11,7 +11,6 @@ public class ProductName {
     public ProductName(String name, String category,int price ) {
         this.name = name;
         this.category=category;
-        System.out.println(this.category);
         this.price=price;
     }
 

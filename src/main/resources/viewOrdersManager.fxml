@@ -41,7 +41,7 @@
         </top>
     </BorderPane>
     <HBox alignment="CENTER" prefHeight="174.0" prefWidth="800.0" style="-fx-spacing: 200; -fx-background-color: #D2B4DE;">
-        <Button mnemonicParsing="false" onAction="#handleConfirmButtonAction" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="Confirm" textFill="WHITE">
+        <Button mnemonicParsing="false" onAction="#handleConfirmButtonAction" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="Send to shipping company" textFill="WHITE">
             <font>
                 <Font name="System Bold Italic" size="18.0" />
             </font></Button>

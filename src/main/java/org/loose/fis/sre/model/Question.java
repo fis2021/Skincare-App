@@ -11,7 +11,7 @@ public class Question {
         this.idQ = idQ;
         this.question=question;
     }
-    public Question(){
+    public Question() {
     }
 
     public int  getIdQ() {
@@ -22,7 +22,7 @@ public class Question {
         this.idQ=idQ;
     }
     public String getQuestion() {
-        return question;
+         return question;
     }
 
     public void setQuestion(String question) {

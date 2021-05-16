@@ -22,7 +22,7 @@
 
     <ChoiceBox id="name" fx:id="name" prefWidth="150.0" style="-fx-background-color: #D2B4DE; -fx-border-color: #4A235A; -fx-background-insets: 0; -fx-border-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
     <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="7">
-        <Button id="orderButton" onAction="#handleMakeOrderButtonAction" style="-fx-background-insets: 0; -fx-background-radius: 20; -fx-background-color: #4A235A;" styleClass="medium_button" text="Place order" textFill="WHITE">
+        <Button id="orderButton" onAction="#handleMakeOrderButtonAction" style="-fx-background-insets: 0; -fx-background-radius: 20; -fx-background-color: #4A235A;" styleClass="medium_button" text="Place order and complete checkout" textFill="WHITE">
             <font>
                 <Font name="System Bold Italic" size="18.0" />
             </font></Button>

@@ -49,7 +49,6 @@ public class ViewOrdersManagerController {
         for(Order order : typesSelected) {
             if(order.getStatus().equals("Waiting")) {
                 OrderService.acceptOrder(order);
-
             }
         }
     }
