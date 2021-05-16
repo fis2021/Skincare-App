@@ -46,7 +46,7 @@ public class OrderService {
     public static void acceptOrder(Order order){
         for(Order order1 : orderRepository.find()){
             if(order.getId() == order1.getId()) {
-                order.setStatus("On its way!");
+                order.setStatus("Confirmed");
                 orderRepository.update(eq("id", order.getId()), order);
             }
         }
