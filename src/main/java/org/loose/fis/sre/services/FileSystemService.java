@@ -8,7 +8,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class FileSystemService {
-    private static final String APPLICATION_FOLDER = ".v2-databases";
+    public static String APPLICATION_FOLDER = ".v2-databases";
     private static final String USER_FOLDER = System.getProperty("user.home");
 
 

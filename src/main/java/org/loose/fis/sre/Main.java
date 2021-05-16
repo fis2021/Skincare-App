@@ -24,7 +24,7 @@ public class Main extends Application {
         QuestionService.initDatabase();
         AnswerService.initDatabase();
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("login.fxml")));
-        primaryStage.setTitle("Skincare App Registration");
+        primaryStage.setTitle("Skincare App Login");
         primaryStage.setScene(new Scene(root, 800, 600));
         primaryStage.show();
     }
