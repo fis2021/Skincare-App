@@ -36,7 +36,7 @@
     </BorderPane>
     <HBox alignment="CENTER" prefHeight="0.0" prefWidth="600.0" style="-fx-spacing: 150;" />
     <HBox alignment="CENTER" prefHeight="232.0" prefWidth="600.0" style="-fx-spacing: 150; -fx-background-color: #D2B4DE;">
-      <Button mnemonicParsing="false" prefWidth="150.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="FidelityPoints" textFill="WHITE">
+      <Button fx:id="pointsButton" mnemonicParsing="false" onAction="#handleViewPointsButtonAction" prefWidth="150.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="FidelityPoints" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>

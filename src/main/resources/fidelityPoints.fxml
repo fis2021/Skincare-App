@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D2B4DE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.FidelityPointsController">
+   <children>
+      <Pane layoutX="-7.0" layoutY="-8.0" prefHeight="409.0" prefWidth="607.0" style="-fx-background-color: #D2B4DE;">
+         <children>
+            <HBox layoutX="46.0" layoutY="56.0" prefHeight="298.0" prefWidth="499.0">
+               <children>
+                  <Text id="title" text=" Your number of points: " wrappingWidth="347.77392578125" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0">
+                     <font>
+                        <Font name="System Bold" size="31.0" />
+                     </font></Text>
+
+               </children></HBox>
+         </children>
+      </Pane>
+      <HBox layoutX="15.0" layoutY="10.0" prefHeight="34.0" prefWidth="585.0">
+         <children>
+            <Button fx:id="backButtonF" mnemonicParsing="false" onAction="#handleBackButtonFAction" prefWidth="100.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            
+         </children>
+      </HBox>
+   </children>
+</GridPane>
