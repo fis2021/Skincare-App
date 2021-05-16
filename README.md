@@ -48,17 +48,40 @@ The project has already been setup for Maven according to the above link. To sta
 To understand better how to set up a project using JavaFX 11+ and Maven, please check the official OpenJFX documentation.
 
 You should see an application starting, that looks like this:
+<img src="pictures/Login.png" />
 
 
 
 You can login if you already have an account, or you can create one by pressing the button "Create an account". When you create your account, you may choose your role: customer, dermatologist or manager. 
+<img src="pictures/Register.png" />
 
 After login, you are redirected to one of the pages, according to your role.
 
-As a customer, you will be able to view/buy products, ask for the dermatologist help, view your order and also to check how many fidelity points you've earned by now. As a Skincare Application manager, you can view/add products, view orders, make offers for customer. If you are the dermatologist, you can answer the questions.
+As a customer, you will be able to view/buy products, ask for the dermatologist help, view your order and also to check how many fidelity points you've earned by now.
+
+
+
+<img src="pictures/PageCustomer.png" />
+
+
+
+As a Skincare Application manager, you can view/add products, view orders, make offers for customer.
+
+
+
+<img src="pictures/PageManager.png" />
+
+
+
+If you are the dermatologist, you can answer the questions.
+
+
+
+<img src="pictures/PageDermatologist.png" />
+
+
 
 **Make sure to close the Skincare-App before trying to access the database, because the database only accepts one connection at a time!**
-
 
 ### Technical Details
 #### Encrypting Passwords
