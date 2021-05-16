@@ -11,6 +11,7 @@ public class ProductName {
     public ProductName(String name, String category,int price ) {
         this.name = name;
         this.category=category;
+        System.out.println(this.category);
         this.price=price;
     }
 
@@ -28,7 +29,7 @@ public class ProductName {
         return category;
     }
 
-    public void setCategory(String name) {
+    public void setCategory(String category) {
         this.category = category;
     }
 
@@ -57,6 +58,6 @@ public class ProductName {
     }
 
     public String toString(){
-        return name +" " +category;
+        return name +" " +category + " "+price;
     }
 }

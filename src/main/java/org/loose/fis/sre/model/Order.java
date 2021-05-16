@@ -33,14 +33,13 @@ public class Order {
         this.client=client;
     }
 
-    public ProductName getProductName() {
-        return productName;
+    public String getProductName() {
+        return productName.getName();
     }
 
     public void setProductName(ProductName productName) {
         this.productName = productName;
     }
-
 
 
     public int getPrice() {

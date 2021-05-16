@@ -28,16 +28,16 @@ public class ViewOrdersCustomerController {
     @FXML
     private TableColumn<Order, Integer> orderPrice;
     @FXML
-    private TableColumn<Order, String> orderState;
+    private TableColumn<Order, String> orderStatus;
 
     public void initialize() {
-        productNameOrder.setCellValueFactory(new PropertyValueFactory<>("productType"));
+        productNameOrder.setCellValueFactory(new PropertyValueFactory<>("productName"));
         orderPrice.setCellValueFactory(new PropertyValueFactory<>("price"));
-        orderState.setCellValueFactory(new PropertyValueFactory<>("state"));
+        orderStatus.setCellValueFactory(new PropertyValueFactory<>("status"));
 
         orderTable.setItems(orders);
 
-        orderState.setCellFactory(column -> new TableCell<>() {
+        orderStatus.setCellFactory(column -> new TableCell<>() {
             @Override
             protected void updateItem(String item, boolean empty) {
                 super.updateItem(item, empty);
@@ -71,9 +71,5 @@ public class ViewOrdersCustomerController {
         return orderTable.getItems();
     }
 
-    public void handlePlaceOrderButtonAction() {
-    }
 
-    public void handleDeletefromCartButtonAction() {
-    }
 }

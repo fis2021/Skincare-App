@@ -21,6 +21,8 @@ public class DermatologistController {
     public Button answersButton;
     @FXML
     private Button logOutButton;
+    @FXML
+    private Button faqDButton;
 
     public void handleAnswersButtonAction() throws Exception{
         Stage window = (Stage) answersButton.getScene().getWindow();
@@ -31,6 +33,11 @@ public class DermatologistController {
     public void handleLogOutButtonAction() throws Exception{
         Stage window = (Stage) logOutButton.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("login.fxml"));
+        window.setScene(new Scene(root, 800,600));
+    }
+    public void handleFaqDButtonAction() throws Exception{
+        Stage window = (Stage) faqDButton.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("questionsTableD.fxml"));
         window.setScene(new Scene(root, 800,600));
     }
 
