@@ -18,6 +18,7 @@ import java.util.Objects;
 
 public class CustomerController {
 
+    public Button pointsButton;
     @FXML
     private Button logOutButton;
     @FXML
@@ -59,6 +60,12 @@ public class CustomerController {
     public void handlefaqButtonAction() throws Exception{
         Stage window = (Stage) faqButton.getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("questionsTable.fxml"));
+        window.setScene(new Scene(root, 800,600));
+    }
+
+    public void handleViewPointsButtonAction() throws Exception{
+        Stage window = (Stage) viewOrdersCButton.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("fidelityPoints.fxml"));
         window.setScene(new Scene(root, 800,600));
     }
 }
