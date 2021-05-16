@@ -22,10 +22,9 @@
         <center>
             <TableView fx:id="orderTable" prefHeight="350.0" prefWidth="680.0" style="-fx-border-color: #4A235A;" BorderPane.alignment="BOTTOM_LEFT">
                 <columns>
-                    <TableColumn fx:id="orderUser" prefWidth="200.0" text="User" />
-                    <TableColumn fx:id="productNameOrder" prefWidth="200.0" text="Name" />
-                    <TableColumn fx:id="orderPrice" prefWidth="150.0" text="Price" />
-                    <TableColumn fx:id="orderStatus" prefWidth="150.0" text="Order Status" />
+                    <TableColumn fx:id="productNameOrder" prefWidth="267.999990940094" text="Name" />
+                    <TableColumn fx:id="orderPrice" prefWidth="187.20001220703125" text="Price" />
+                    <TableColumn fx:id="orderStatus" prefWidth="243.19998168945312" text="Order Status" />
                 </columns>
             </TableView>
         </center>
@@ -40,14 +39,5 @@
             </Label>
         </top>
     </BorderPane>
-    <HBox alignment="CENTER" prefHeight="174.0" prefWidth="800.0" style="-fx-spacing: 200; -fx-background-color: #D2B4DE;">
-        <Button mnemonicParsing="false" onAction="#handlePlaceOrderButtonAction" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="Place order" textFill="WHITE">
-            <font>
-                <Font name="System Bold Italic" size="18.0" />
-            </font></Button>
-        <Button mnemonicParsing="false" onAction="#handleDeletefromCartButtonAction" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="I don't want this anymore" textFill="WHITE">
-            <font>
-                <Font name="System Bold Italic" size="18.0" />
-            </font></Button>
-    </HBox>
+    <HBox alignment="CENTER" prefHeight="174.0" prefWidth="800.0" style="-fx-spacing: 200; -fx-background-color: #D2B4DE;" />
 </VBox>

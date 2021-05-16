@@ -4,9 +4,16 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.DermatologistController">
+<VBox prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D2B4DE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.loose.fis.sre.controllers.DermatologistController">
     <children>
-        <BorderPane prefHeight="250.0" prefWidth="600.0" style="-fx-background-color: #D2B4DE;" />
+        <BorderPane prefHeight="250.0" prefWidth="600.0" style="-fx-background-color: #D2B4DE;">
+         <center>
+            <Button fx:id="faqDButton" mnemonicParsing="false" onAction="#handleFaqDButtonAction" prefWidth="150.0" style="-fx-background-color: #4A235A; -fx-background-insets: 0; -fx-background-radius: 20;" text="FAQ" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+         </center></BorderPane>
         <HBox alignment="CENTER" prefHeight="150.0" prefWidth="600.0" style="-fx-spacing: 150; -fx-background-color: #D2B4DE;">
             <children>
                 <Button fx:id="answersButton" alignment="CENTER" mnemonicParsing="false" onAction="#handleAnswersButtonAction" prefWidth="150.0" style="-fx-background-insets: 0; -fx-background-radius: 20; -fx-background-color: #4A235A;" text="Give Answers" textFill="WHITE">

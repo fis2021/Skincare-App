@@ -6,6 +6,7 @@ public class Question {
 
     private int idQ;
     private String question;
+
     public Question( int idQ , String question) {
         this.idQ = idQ;
         this.question=question;

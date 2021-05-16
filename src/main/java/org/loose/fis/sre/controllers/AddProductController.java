@@ -36,6 +36,7 @@ public class AddProductController {
 
         try {
             ProductNameService.checkNameDoesNotAlreadyExist(name.getText());
+            System.out.println(category.getText());
             ProductNameService.addName(name.getText(), category.getText(), Integer.parseInt(price.getText()));
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("viewProductsManager.fxml")));
             Stage window = (Stage) addMessage.getScene().getWindow();
