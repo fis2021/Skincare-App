@@ -25,6 +25,7 @@ public class ProductNameService {
     public static void addName(String  name, String category,int price) throws NameAlreadyExistsException {
         checkNameDoesNotAlreadyExist(name);
         productNameRepository.insert(new ProductName(name,category,price));
+
     }
     public static void checkNameDoesNotAlreadyExist(String name) throws NameAlreadyExistsException {
         for (ProductName productName : productNameRepository.find()) {
@@ -38,8 +39,10 @@ public class ProductNameService {
         for(ProductName productName : productNameRepository.find()) {
             list.add(productName);
         }
+
         return list;
     }
+
     public static ProductName getProductName(String name){
         for(ProductName productName : productNameRepository.find())
             if(Objects.equals(name, productName.getName()))

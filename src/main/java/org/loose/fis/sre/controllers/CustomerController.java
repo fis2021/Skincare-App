@@ -24,6 +24,11 @@ public class CustomerController {
     private Button viewProductsButton;
     @FXML
     private Button helpButton;
+    @FXML
+    private Button viewOrdersCButton;
+    @FXML
+    private Button faqButton;
+
 
 
     public void handleLogOutButtonAction() throws Exception{
@@ -45,6 +50,15 @@ public class CustomerController {
 
     }
 
-    public void handlesearchButtonAction() {
+    public void handleViewOrdersCButtonAction() throws Exception{
+        Stage window = (Stage) viewOrdersCButton.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("viewOrdersCustomer.fxml"));
+        window.setScene(new Scene(root, 800,600));
+    }
+
+    public void handlefaqButtonAction() throws Exception{
+        Stage window = (Stage) faqButton.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("questionsTable.fxml"));
+        window.setScene(new Scene(root, 800,600));
     }
 }

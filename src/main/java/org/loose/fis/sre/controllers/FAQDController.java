@@ -20,11 +20,11 @@ import org.loose.fis.sre.services.AnswerService;
 
 import java.util.List;
 
-public class FAQController {
+public class FAQDController {
     @FXML
     public Button backButtonQ;
     @FXML
-    private TableView<Question> questionTable;
+    private TableView<Question> questionTableD;
 
     @FXML
     private TableColumn<Question, Integer> idQColumn;
@@ -40,12 +40,11 @@ public class FAQController {
     private TableColumn<Answer, String> answerColumn;
 
 
-
     public void initialize() {
         idQColumn.setCellValueFactory(new PropertyValueFactory<>("idQ"));
         questionsColumn.setCellValueFactory(new PropertyValueFactory<>("questions"));
 
-        questionTable.setItems(questions);
+        questionTableD.setItems(questions);
 
         idAColumn.setCellValueFactory(new PropertyValueFactory<>("idQ"));
         answerColumn.setCellValueFactory(new PropertyValueFactory<>("answers"));
@@ -55,19 +54,18 @@ public class FAQController {
 
 
     public void handleBackButtonQAction() throws Exception{
-        Stage window = (Stage) questionTable.getScene().getWindow();
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("pageCustomer.fxml"));
+        Stage window = (Stage) questionTableD.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("pageDermatologist.fxml"));
         window.setScene(new Scene(root, 800,600));
     }
 
     private ObservableList<Question> questions = FXCollections.observableArrayList(QuestionService.getAllQuestions());
-    public List <Question> getQuestionsFromTable() {
-        return questionTable.getItems();
+    public List <Question> getQuestionFromTable() {
+        return questionTableD.getItems();
     }
 
     private ObservableList<Answer> answers = FXCollections.observableArrayList(AnswerService.getAllAnswers());
-    public List <Answer> getAnswersFromTable() {
+    public List <Answer> getAnswerFromTable() {
         return answerTable.getItems();
     }
 }
-

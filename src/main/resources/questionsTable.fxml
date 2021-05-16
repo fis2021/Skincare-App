@@ -14,16 +14,16 @@
                     </font></Button>
             </children>
         </HBox>
-      <TableView layoutX="35.0" layoutY="100.0" prefHeight="250.0" prefWidth="250.0">
+      <TableView fx:id="questionTable" layoutX="35.0" layoutY="100.0" prefHeight="250.0" prefWidth="250.0">
         <columns>
-          <TableColumn prefWidth="125.0" text="IdQ" />
-          <TableColumn prefWidth="125.0" text="Questions" />
+          <TableColumn fx:id="idQColumn" prefWidth="125.0" text="IdQ" />
+          <TableColumn fx:id="questionsColumn" prefWidth="125.0" text="Questions" />
         </columns>
       </TableView>
-      <TableView layoutX="316.0" layoutY="100.0" prefHeight="250.0" prefWidth="250.0">
+      <TableView fx:id="answerTable" layoutX="316.0" layoutY="100.0" prefHeight="250.0" prefWidth="250.0">
         <columns>
-          <TableColumn prefWidth="125.0" text="IdQ" />
-          <TableColumn prefWidth="125.0" text="Answers" />
+          <TableColumn fx:id="idAColumn" prefWidth="125.0" text="IdQ" />
+          <TableColumn fx:id="answerColumn" prefWidth="125.0" text="Answers" />
         </columns>
       </TableView>
 
