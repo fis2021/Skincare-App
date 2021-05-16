@@ -18,7 +18,7 @@ import static org.loose.fis.sre.services.FileSystemService.getPathToFile;
 public class UserService {
 
     private static ObjectRepository<User> userRepository;
-
+    private static Nitrite database;
     public static void initDatabase() {
         Nitrite database = Nitrite.builder()
                 .filePath(getPathToFile("registration-example.db").toFile())
@@ -71,5 +71,9 @@ public class UserService {
             }
         }
         throw new UsernameDoesntExistException(username);
+    }
+    public static void close() {
+        userRepository.close();
+        database.close();
     }
 }
